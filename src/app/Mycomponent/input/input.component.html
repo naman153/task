@@ -1,0 +1,20 @@
+<div class="container">
+    
+<form #postForm="ngForm" (ngSubmit)="onCreateBook(postForm.value)">
+    <div class="formcontainer">
+        <h5>Input Book Data</h5>
+        <br>
+        <p><label><b>Serial No. :</b></label>
+        <input type="text" class="titleinput" name="sno" ngModel required/></p><br>
+
+        <p><label><b>Book Title :</b></label>
+        <input type="text" class="titleinput" name="title" ngModel required/></p><br>
+        <p><label><b>Author Name :</b></label>
+        <input type="text" class="titleinput" name="author" ngModel required/></p><br>
+        <p><label><b>Price :</b></label>
+        <input type="text" class="titleinput" name="price" ngModel required/></p><br>
+        
+        <p><button type="submit" class="postbutton">Send Post</button></p>
+    </div>
+</form>
+</div>

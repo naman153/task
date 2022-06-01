@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "task-c0559"
+  },
+  "targets": {
+    "task-c0559": {
+      "hosting": {
+        "task": [
+          "task-c0559"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="container">
+    <table>
+        <tr>
+          <th>Sno</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price</th>
+          <th>Delete</th>
+        </tr>
+        <tr *ngFor="let task of tasks" >
+          <td>{{task.sno}}</td>
+          <td>{{task.title}}</td>
+          <td>{{task.author}}</td>
+          <td>{{task.price}}</td>
+          <td><button type="submit" class="btn btn-danger" (click)="delete_book(task.title)"> Delete</button></td>
+
+        </tr>
+      </table>
+
+</div>
+
+
+

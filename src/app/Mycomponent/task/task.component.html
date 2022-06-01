@@ -1,0 +1,24 @@
+<div>
+  <div class="row">
+    <nav class="container">
+        <input  type="text" placeholder="Search book" aria-label="book-search" name="search" [(ngModel)]="searchedKeyword"> 
+    </nav>
+  </div>
+  
+  <div class="row">
+    
+      <div *ngFor="let tasks of tasks | filter:searchedKeyword" class="col-2">
+        
+        <h3>Title: {{tasks.title}} </h3>
+        <br>
+        <h5>Author: {{tasks.author}}</h5>
+        <br>
+        <h5>Price: {{tasks.price}}</h5>
+        <br>
+        {{tasks.sno}}
+          
+        
+      </div>
+      
+  </div>
+</div>
